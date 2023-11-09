@@ -299,7 +299,7 @@ body{
     justify-content: space-between;
     width: 95%;
     margin:auto;
-    padding: 4rem 0;
+    padding: 5.8rem 0;
     position: relative;
  }
  .banner-container .btn .prev {
@@ -336,3 +336,58 @@ body{
 #banner > *:nth-child(5) {animation-delay: 16s}
 #banner > *:nth-child(6) {animation-delay: 18s}
 /* ------------------------end banner----------------------------- */
+/* ----------------home page------------------------------ */
+
+.all-card{
+    position: relative;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    width: 100%;
+    margin:-1.3rem auto;
+    background: #b6b6b693;
+  
+}
+.all-card .card{
+    background: #ffffff;
+    width: 21.7%;
+    margin: 9px;
+    padding: 15px;
+    height: 20%;
+
+}
+.all-card .card .body{
+   height: 43vh;
+}
+
+.all-card .card .body .char1{
+    display: flex;
+}
+.all-card .card .body .char1 .img img{
+   width: 100%;
+}
+.all-card .card .body .char1 p{
+    font-size: 0.7rem;
+}
+.all-card .card .title{
+   font-size: 1.1rem;
+   font-weight: bold;
+
+}
+.all-card .card .img img{
+    width: 100%;
+
+}
+.all-card .card .link a{
+    font-size: 15px;
+    text-decoration: none;
+    color: teal;
+
+    
+
+}
+.all-card .card .link a:hover{
+    color: #ff8800;
+
+}
