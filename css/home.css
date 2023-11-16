@@ -391,3 +391,44 @@ body{
     color: #ff8800;
 
 }
+
+/* ============end home page====================== */
+
+/* ---------------------------footer---------------- */
+.footer{
+    margin-top: 1.5rem;
+}
+.footer .top-footer{
+    background: #37475A;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+
+}
+.footer .center-footer{
+    background: #232F3E;
+    color: #fcfcfce7;
+    font-weight: normal;
+    padding: 1rem;
+}
+.footer .inside-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    font-size: 14px;
+}
+.footer .inside-footer .title, .footer .inside-footer .paragraph{
+    margin: 5px;
+}
+
+.footer .bottom-footer{
+    background: #232F3E;
+    display: flex;
+    border-top: 1px solid #eaeaea;
+}
+
+
+
