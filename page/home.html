@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" />
     <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="../img/nav-bar/logo2.jpg">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+     <!--font awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
       <!-- --------------navbar------------- -->
@@ -90,196 +95,558 @@
     </div>
     <!-- --------------end navbar------------- -->
     <!--============== sub-navbar ====================-->
-    <div class="sub-nav-bar">
-        <div class="left">
-            <div class="hamberger-menu">
-                <div class="icon">
-                    <i class="fa fa-bars"></i>
-                </div>
-                <div class="text">All</div>
-            </div>
-            <li>
-                Today's Deals
-            </li>
-            <li>
-                Registry
-            </li>
-            <li>
-                Customer Service
-            </li>
-            <li>
-                Gift Cards
-            </li>
-            <li>
-                Sell
-            </li>
-           
-
+ 
+    <nav class="nav sub-nav-bar">
+        <div class="container container-nav left">
+            
+                <li class="border-white hamberger-menu" id="open-nav-sidebar">
+                    <span class="open-nav-slider icon">
+                        <i class="fa-solid fa-bars"></i>
+                        <p>All</p>
+                    </span>
+                </li>
+                <li class="border-white"><a href="#">Today's Deals</a></li>
+                <li class="border-white"><a href="#">Registry</a></li>
+                <li class="border-white"><a href="#">Customer Service</a></li>
+                <li class="border-white"><a href="#">Gift Cards</a></li>
+                <li class="border-white"><a href="#">Sell</a></li>
         </div>
         <div class="right">
             Get a jump on Holiday gifts
 
         </div>
+    </nav>
+
+    <!--sidebar navigation-->
+    <div class="sidebar-container-navigation" id="sidebar-container-navigation-id">
+        <div class="sidebar-left-part">
+            <div class="sidebar-top">
+                <i class="fa-solid fa-circle-user"></i>
+                <h2>Hello, <span>sign in</span></h2>
+            </div>
+            <div class="sidebar-wrap">
+                <div class="sidebar-item">
+                    <h2>Trending</h2>
+                    <p>Best Sellers</p>
+                    <p>New Releases</p>
+                    <p>Movers and Shakers</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Digital Content And Devices</h2>
+                    <p>Echo & Alexa</p>
+                    <p>Fire TV</p>
+                    <p>Kindle E-Readers & eBooks</p>
+                    <p>Audible Audiobooks</p>
+                    <p>Amazon Prime Video</p>
+                    <p>Amazon Prime Music</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Shop By Category</h2>
+                    <p>Mobiles, Computes</p>
+                    <p>TV, Appliances, Electronic</p>
+                    <p>Men's Fashion</p>
+                    <p>Women's Fashion</p>
+                    <p>See All</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Programs & Features</h2>
+                    <p>Gift Cards & Mobile Recharges</p>
+                    <p>Flight Tickets</p>
+                    <p>#Foundlt-OnAmazon</p>
+                    <p>Clearance store</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Help & Settings</h2>
+                    <p>Your Account</p>
+                    <p>Customer Service</p>
+                    <p><a href="../index.html" style="text-decoration: none;color: red;">Sign out</a></p>
+                </div>
+            </div>
+        </div>
+        <button id="sidebar-navigation-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
     </div>
+    
     <!--============== end sub-navbar ====================-->
     <!-- ----------banner--------------- -->
-    <div class="banner-container">
-        <div class="banner" id="banner">
-                <div class="mySlides">
-                    <img src="../img/banner/banner1.jpg" alt="Image 1">
-                </div>
-                <div class="mySlides">
-                    <img src="../img/banner/banner2.jpg" alt="Image 2">
-                </div>
-                <div class="mySlides">
-                    <img src="../img/banner/banner3.jpg" alt="Image 3">
-                </div>
-                <div class="mySlides">
-                    <img src="../img/banner/banner4.jpg" alt="Image 4">
-                </div>
-                <div class="mySlides">
-                    <img src="../img/banner/banner5.jpg" alt="Image 5">
-                </div>
-                <div class="mySlides">
-                    <img src="../img/banner/banner6.jpg" alt="Image 6">
-                </div>
+    <!--image slider -->
+
+    <div class="image-container">
+        <div class="image-list">
+            <div class="image-item">
+                <img src="https://m.media-amazon.com/images/I/71cp9PVuTfL._SX3000_.jpg" />
+            </div>
+            <div class="image-item">
+                <img src="https://m.media-amazon.com/images/I/61GnAucagBL._SX3000_.png" />
+            </div>
+            <div class="image-item">
+                <img src="https://m.media-amazon.com/images/I/71qlKqpJnlL._SX3000_.jpg" />
+            </div>
+            <div class="image-item">
+                <img src="https://m.media-amazon.com/images/I/71cQMXCLSvL._SX3000_.jpg" />
+            </div>
+            <div class="image-item">
+                <img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" />
+            </div>
+            <div class="image-item">
+                <img src="https://m.media-amazon.com/images/I/61O72XhcEkL._SX3000_.jpg" />
+            </div>
+            <div class="image-item">
+                <img src="https://m.media-amazon.com/images/I/61VuJdpjvaL._SX3000_.jpg" />
+            </div>
+            <div class="image-item">
+                <img src="https://m.media-amazon.com/images/I/61UrRx+3LLL._SX3000_.jpg" />
+            </div>
         </div>
-        <div class="btn">
-            <i class="fa fa-angle-left prev"></i>
-            <i class="fa fa-angle-right next"></i>
+
+        <div class="image-btn-container">
+
+            <button class="slider-btn" id="slide-btn-left"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-btn" id="slide-btn-right"><i class="fa-solid fa-chevron-right"></i></i></button>
         </div>
     </div>
     <!-- ---------------end banner------------------------- -->
     <!-- -----------------home page------------------------ -->
-    <div class="all-card">
-        <div class="card">
-            <div class="title">
-                Gaming accessories
+    <div class="body-contener">
+        <div class="all-card">
+            <div class="card">
+                <div class="title">
+                    Gaming accessories
+                </div>
+                <div class="body">
+                    <div class="char1">
+                        <div class="img">
+                            <img src="../img/home/pd2.jpg" alt="">
+                            <p>Headsets</p>
+                        </div>
+                        <div class="img">
+                            <img src="../img/home/pd2.jpg" alt="">
+                            <p>Keybards</p>
+                        </div>
+                    </div>
+                    <div class="char1">
+                        <div class="img">
+                            <img src="../img/home/pd2.jpg" alt="">
+                            <p>Headsets</p>
+                        </div>
+                        <div class="img">
+                            <img src="../img/home/pd2.jpg" alt="">
+                            <p>Keybards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
             </div>
-            <div class="body">
-                <div class="char1">
+            <div class="card">
+                <div class="title">
+                    Deals in PCs
+                </div>
+                <div class="body">
                     <div class="img">
                         <img src="../img/home/pd2.jpg" alt="">
-                        <p>Headsets</p>
                     </div>
+    
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    Small gifts under $20
+                </div>
+                <div class="body">
                     <div class="img">
                         <img src="../img/home/pd2.jpg" alt="">
-                        <p>Keybards</p>
                     </div>
+    
                 </div>
-                <div class="char1">
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    Toys under $25
+                </div>
+                <div class="body">
                     <div class="img">
                         <img src="../img/home/pd2.jpg" alt="">
-                        <p>Headsets</p>
                     </div>
+    
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    Card5
+                </div>
+                <div class="body">
                     <div class="img">
                         <img src="../img/home/pd2.jpg" alt="">
-                        <p>Keybards</p>
+                    </div>
+    
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    Card6
+                </div>
+                <div class="body">
+                    <div class="img">
+                        <img src="../img/home/pd2.jpg" alt="">
+                    </div>
+    
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    Card7
+                </div>
+                <div class="body">
+                    <div class="img">
+                        <img src="../img/home/pd2.jpg" alt="">
+                    </div>
+    
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    Card8
+                </div>
+                <div class="body">
+                    <div class="img">
+                        <img src="../img/home/pd2.jpg" alt="">
+                    </div>
+    
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
+            </div>
+        </div>
+        <section class="today_deals_container">
+            <div class="today_deals_heading">
+                <h1>Today's Deals</h1>
+                <p><a href="#">See all deals</a></p>
+            </div>
+    
+            <div class="today_deals_product_container">
+                <div class="today_deals_btn_container">
+                    <button  class="today_deal_btn" id="today_deal_btn_prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="today_deal_btn" id="today_deal_btn_next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+    
+                <div class="today_deals_product_list">
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
                     </div>
                 </div>
             </div>
-            <div class="link">
-                <a href="">See more</a>
+        </section>
+        <section class="today_deals_container">
+            <div class="today_deals_heading">
+                <h1>Today's Deals</h1>
+                <p><a href="#">Discount Products</a></p>
             </div>
-        </div>
-        <div class="card">
-            <div class="title">
-                Deals in PCs
-            </div>
-            <div class="body">
-                <div class="img">
-                    <img src="../img/home/pd2.jpg" alt="">
+    
+            <div class="today_deals_product_container">
+                <div class="today_deals_btn_container">
+                    <button  class="today_deal_btn" id="today_deal_btn_prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="today_deal_btn" id="today_deal_btn_next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
                 </div>
-
-            </div>
-            <div class="link">
-                <a href="">See more</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="title">
-                Small gifts under $20
-            </div>
-            <div class="body">
-                <div class="img">
-                    <img src="../img/home/pd2.jpg" alt="">
+    
+                <div class="today_deals_product_list">
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-            </div>
-            <div class="link">
-                <a href="">See more</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="title">
-                Toys under $25
-            </div>
-            <div class="body">
-                <div class="img">
-                    <img src="../img/home/pd2.jpg" alt="">
+         <!-- SECTION 2 - Related Items -->
+        <section class="section-2">
+            <div class="section-2-container">
+                <h3>Related to items you've viewed</h3>
+                <div class="product-cards">
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61Y30DpqRVL._AC_SY400_.jpg" alt="">
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61LNnZPoKPS._AC_SY400_.jpg" alt="">
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/71iiXU7HHkL._AC_SY400_.jpg" alt="">
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61XZQXFQeVL._AC_SY400_.jpg" alt="">
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/712B4P3yOnL._AC_SY400_.jpg" alt="">
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/51eTOVYRbTL._AC_SY400_.jpg" alt="">
+                    </div>
                 </div>
-
             </div>
-            <div class="link">
-                <a href="">See more</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="title">
-                Card5
-            </div>
-            <div class="body">
-                <div class="img">
-                    <img src="../img/home/pd2.jpg" alt="">
+        </section>
+        
+        <!-- SECTION 2 - Groceries -->
+        <section class="section-2">
+            <div class="section-2-container">
+                <h3>Best Sellers in Grocery & Gourmet Foods</h3>
+                <div class="product-cards">
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/617tvTiZLGL._AC_SY400_.jpg" alt="">
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/51tNket0w8L._AC_SY400_.jpg" alt="">
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/91oNY+gNzPL._AC_SY400_.jpg" alt="">
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81NrftYFxsL._AC_SY400_.jpg" alt="">
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61uohjMdfzL._AC_SY400_.jpg" alt="">
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61oagbcgAtS._AC_SY400_.jpg" alt="">
+                    </div>
                 </div>
+            </div>
+        </section>
 
-            </div>
-            <div class="link">
-                <a href="">See more</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="title">
-                Card6
-            </div>
-            <div class="body">
-                <div class="img">
-                    <img src="../img/home/pd2.jpg" alt="">
+        <div class="all-card2">
+            <div class="card">
+                <div class="title">
+                    Card5
                 </div>
-
-            </div>
-            <div class="link">
-                <a href="">See more</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="title">
-                Card7
-            </div>
-            <div class="body">
-                <div class="img">
-                    <img src="../img/home/pd2.jpg" alt="">
+                <div class="body">
+                    <div class="img">
+                        <img src="../img/home/pd2.jpg" alt="">
+                    </div>
+    
                 </div>
-
-            </div>
-            <div class="link">
-                <a href="">See more</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="title">
-                Card8
-            </div>
-            <div class="body">
-                <div class="img">
-                    <img src="../img/home/pd2.jpg" alt="">
+                <div class="link">
+                    <a href="">See more</a>
                 </div>
-
             </div>
-            <div class="link">
-                <a href="">See more</a>
+            <div class="card">
+                <div class="title">
+                    Card6
+                </div>
+                <div class="body">
+                    <div class="img">
+                        <img src="../img/home/pd2.jpg" alt="">
+                    </div>
+    
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    Card7
+                </div>
+                <div class="body">
+                    <div class="img">
+                        <img src="../img/home/pd2.jpg" alt="">
+                    </div>
+    
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    Card8
+                </div>
+                <div class="body">
+                    <div class="img">
+                        <img src="../img/home/pd2.jpg" alt="">
+                    </div>
+    
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
             </div>
         </div>
+        <section class="today_deals_container">
+            <div class="today_deals_heading">
+                <h1>Customers who viewed items in your browsing history also viewed</h1>
+                <p><a href="#">Discount Products</a></p>
+            </div>
+    
+            <div class="today_deals_product_container">
+                <div class="today_deals_btn_container">
+                    <button  class="today_deal_btn" id="today_deal_btn_prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="today_deal_btn" id="today_deal_btn_next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+    
+                <div class="today_deals_product_list">
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+    
+                    <div class="today_deals_product_item">
+                        <img src="https://m.media-amazon.com/images/I/411mbYGYIdL._AC_SY200_.jpg"/>
+                        <div class="discount_Contaienr">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+
     </div>
     <!-- ------------------end home page-------------------- -->
 
@@ -764,6 +1131,6 @@
 
     </div>
 
-    
+    <script src="../js/home.js"></script>
 </body>
-</html>t
+</html>
