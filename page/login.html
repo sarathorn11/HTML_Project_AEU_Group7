@@ -5,43 +5,33 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../css/login_register.css">
+  <link rel="stylesheet" href="../css/login_register.css">
   <!-- Amazon FavIcon -->
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" />
-  <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <!-- Font Awesome CSS CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous" />
-  <title>Amazon : Register</title>
-</head>
+  <!-- Bootstrap CSS Local -->
 
+  <title>Amazon : Login</title>
+</head>
 
 <body>
 
-
-  <!-- Register Form Card Starts -->
+  <!-- Login Form Card Starts -->
   <div class="logo-form">
     <img src="../img/nav-bar/logo-form.png" alt="">
 </div>
   <div class="container mb-5">
     <div class="card mx-auto mt-5 pb-3 shadow rounded" style="width: 25rem;">
       <div class="card-body">
-        <h4 class="card-title">Register</h4>
-        <!-- Register Form Start -->
-        <form class="needs-validation" autocomplete="off" method="post" action="#" novalidate>
-          <div class="form-group">
-            <label for="userName">Your name: </label>
-            <input type="text" name="name" class="form-control" placeholder="Ganguly Tech" id="userName" required minlength="10">
-            <div class="valid-feedback">
-              <i class="far text-success fa-thumbs-up"></i> OK
-            </div>
-            <div class="invalid-feedback">
-              <i class="fas text-danger fa-exclamation-triangle"></i> Some error in your name.
-            </div>
-          </div>
+        <h4 class="card-title">Login</h4>
+        <!-- Login Form Start -->
+        <form class="needs-validation" autocomplete="off" method="get" action="../index.html" novalidate>
           <div class="form-group">
             <label for="userEmail">Email: </label>
             <input type="email" name="email" class="form-control" placeholder="abc@abc.com" id="userEmail"
@@ -66,26 +56,16 @@
               <i class="fas text-danger fa-exclamation-triangle"></i> Some error in password.
             </div>
           </div>
-          <div class="form-group">
-            <label for="userPassword2">Password again: </label>
-            <input type="password" class="form-control" placeholder="******" name="password2" id="userPassword2"
-              aria-describedby="passwordHelp2" required minlength="6">
-            <small id="passwordHelp2" class="form-text text-muted"><i class="fas text-primary fa-info"></i> Password must match the above.</small>
-            <div class="valid-feedback">
-              <i class="far text-success fa-thumbs-up"></i> OK
-            </div>
-            <div class="invalid-feedback">
-              <i class="fas text-danger fa-exclamation-triangle"></i> Some error in re-type password.
-            </div>
-          </div>
-          <button type="submit" class="btn btn-warning w-100 shadow btn-sm rounded">Register</button>
-        </form> <!-- Register Form Ends -->
-
+          <button type="submit" class="btn btn-warning w-100 shadow btn-sm rounded">Sign in</button>
+        </form> <!-- Login Form Ends -->
+       
+        
         <!-- OR Seperator -->
-        <hr class="hr-text" data-content="OR">
+        <hr class="hr-text" data-content="New to Amazon?">
+        <p class="text-center">Are you forgot your password? <a href="forgot_password.html">Forgot password <i class="fas fa-caret-right"></i></a></p>
 
         <!-- Create account button -->
-        <p class="text-center">Already have an account? <a href="./login.html">Sign in <i class="fas fa-caret-right"></i></a></p>
+        <a href="./register.html" class="btn btn-dark btn-sm w-100 mt-2">Create your Amazon account</a>
         <a href="https://www.google.com" class="btn btn-outline-success btn-sm w-100 mt-2">
           <i class="fab fa-google"></i> Sign in with Google
         </a>
@@ -94,7 +74,7 @@
         </a>
       </div>
     </div>
-  </div> <!-- Register Form Card Ends -->
+  </div> <!-- Login Form Card Ends -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -107,7 +87,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-
+  <!-- Drawer JS File -->
+  <script src="js/bootstrap-drawer.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="js/custom.js"></script>
 
   <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -130,5 +113,4 @@
     })();
     </script>
 </body>
-
 </html>

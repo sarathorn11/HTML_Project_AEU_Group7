@@ -247,4 +247,3 @@ today_deal_btn_nextEl.addEventListener("click", () => {
     
     
 })
-
