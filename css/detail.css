@@ -4,9 +4,7 @@
     font-family: sans-serif;
 }
 
-body {
-    background: #007185;
-}
+
 
 /* -------------------------nav-bar ------------------------*/
 .nav-bar {
@@ -423,125 +421,6 @@ body {
     animation-delay: 18s
 }
 
-/* ------------------------end banner----------------------------- */
-#submenu-registry {
-
-    z-index: 40;
-}
-
-#submenu-registry .submenu-bg-color {
-    background: #007185;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-
-}
-
-#submenu-registry .submenu-registry-flex {
-    display: flex;
-}
-
-#submenu-registry ul li {
-    list-style-type: none;
-    margin: 0 0 0 25px;
-}
-
-#submenu-registry a {
-    text-decoration: none;
-    color: white;
-}
-
-#submenu-registry ul {
-    margin-left: 40px;
-    padding: 25px 0px 25px 0px;
-}
-
-@media (min-width:1366px) {
-    .container-width {
-        width: 1366px;
-        margin: auto;
-    }
-
-  
-}
-
-@media (min-width:768px) {
-
-    #service-card {
-        display: grid;
-        grid-template-columns: auto auto ;
-    }
-}
-@media (min-width:1024px) {
-
-    #service-card {
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-    #all-topic-card .card-topic {
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-}
-
-.box-shadow-1 {
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-
-/*----------------------- welcome body----------------------  */
-#welcome .welcome-body {
-    padding: 0px 65px 0px 65px;
-    color: white;
-}
-
-#welcome .welcome-body h1 {
-    padding: 40px 0px 5px 0px;
-}
-
-#welcome .welcome-body h4 {
-    padding: 10px 0px 5px 0px;
-}
-
-/* ---------------------- end welcome body------------------- */
-/* ------------------service card-------------------- */
-
-#service-card .service-card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    margin: 40px 40px 10px 40px;
-    border-radius: 5px;
-}
-
-/* ------------------end service card-------------------- */
-
-
-
-/* --------------- end search registry----------------- */
-.border-left {
-    border-right: solid 1px white;
-    padding-right: 15px;
-}
-
-.registry-flex {
-    display: flex;
-}
-
-.registry-center {
-    display: flex;
-    justify-content: center;
-}
-
-.text-align-center {
-    text-align: center;
-}
-
-.margin-5 {
-    margin: 5px;
-}
-
-.padding-left-right {
-    padding: 0px 10px 0px 10px;
-}
 
 .pt-5 {
     padding-top: 5px;
@@ -636,25 +515,76 @@ body {
 .mx-1 {
     margin-left: 10px;
 }
-
-/*--------------------------------------- all help topics --------------------------- */
-.active {
-    background: #008296;
-    border-radius: 4px;
-    color: #fff;
-    overflow: hidden;
-    font-size: 15px;
-    line-height: 1.3;
-    padding: 5px 17px;
-    cursor: pointer;
-    z-index: 90;
+.mx-2{
+    margin-left:2px ;
+    margin-right: 2px;
+}
+.d-flex {
     display: flex;
-    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-white{
     color: white;
-    overflow: hidden;
-    width: 100%;
+}
+/*--------------------------------------- all help topics --------------------------- */
+@media (min-width:1366px) {
+    .container-width {
+        width: 1366px;
+        margin: auto;
+    }
+    .detail-grid{
+        display: grid;
+    }
+
+  
+}
+@media (min-width:1024px) {
+   
+    .detail-grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    
+  
+}
+@media (max-width:600px) {
+   
+    .grid-detail{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    
+  
+}
+@media (min-width:600px) {
+   
+    .grid-detail{
+        display: grid;
+        grid-template-columns: auto auto auto auto  ;
+   
+    }
+    .w-detail-card {
+        width: 30em;
+    
+    }
+  
 }
 
+.color-007815{
+    color: #007815;
+}
+.star-color{
+    color: rgb(255, 143, 0);
+}
+.ac-badge-triangle {
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-top: 22px solid;
+    color: #232F3E;
+}
 /*--------------------------------------- end all help topics --------------------------- */
 /* --------
 ---------------------all---------------------- */
