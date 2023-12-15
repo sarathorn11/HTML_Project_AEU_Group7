@@ -828,10 +828,10 @@ body{
 
 
 
-/* =======================Screen Ipand==================== */
+/* =======================Screen Ipaid==================== */
 
 /* ----------------------nav-bar-------------------- */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 768px) {
     
     .nav-bar{
         padding: 0px;
@@ -1045,7 +1045,7 @@ body{
 /* =======================Screen Phone==================== */
 
 /* ----------------------nav-bar-------------------- */
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 480px) {
     
     .nav-bar .nav-bar-left .logo{
         border: 1px solid rgb(0, 0, 0);
@@ -1214,14 +1214,6 @@ body{
         width: 100%;
         padding: -6rem;
     }
-
-   
-
-
-
-
-
-
    
   }
 

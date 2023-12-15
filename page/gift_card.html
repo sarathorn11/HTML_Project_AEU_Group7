@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- nav-bar ------------------------->
-    <div class="nav-bar">
+    <div class="nav-bar" style="overflow: hidden;">
         <div class="nav-bar-left">
             <div class="logo">
                 <img src="../img/nav-bar/logo.png" alt="">
@@ -103,10 +103,10 @@
                         <p>All</p>
                     </span>
                 </li>
-                <li class="border-white"><a href="#">Today's Deals</a></li>
+                <li class="border-white"><a href="home.html">Today's Deals</a></li>
                 <li class="border-white"><a href="#">Registry</a></li>
                 <li class="border-white"><a href="#">Customer Service</a></li>
-                <li class="border-white"><a href="home.html">Gift Cards</a></li>
+                <li class="border-white"><a href="gift_card.html">Gift Cards</a></li>
                 <li class="border-white"><a href="#">Sell</a></li>
         </div>
         <div class="right">
@@ -294,39 +294,506 @@
     <!--image slider -->
 
     <div class="image-container">
-        <div class="image-list">
-            <div class="image-item">
-                <img src="https://m.media-amazon.com/images/I/71cp9PVuTfL._SX3000_.jpg" />
+        <div style="background: #ccc; height: 350px; padding: 10px 18px 10px 18px;">
+            <div style="background: #fff; padding-bottom: 30px; ">
+                <div class="image-list">
+                    <div class="image-item">
+                        <a href=""><img src="/img/gift_card/slide1.png"/></a>
+                    </div>
+                    <div class="image-item"> 
+                        <a href=""><img src="/img/gift_card/slide2.jpg"/></a>
+                    </div>
+                    <div class="image-item">
+                        <a href=""><img src="/img/gift_card/slide3_.jpg"/></a>
+                    </div>
+                </div>
+                <div class="image-btn-container">
+                    <button class="slider-btn" id="slide-btn-left"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn" id="slide-btn-right"><i class="fa-solid fa-chevron-right"></i></i></button>
+                </div>
             </div>
-            <div class="image-item">
-                <img src="https://m.media-amazon.com/images/I/61GnAucagBL._SX3000_.png" />
-            </div>
-            <div class="image-item">
-                <img src="https://m.media-amazon.com/images/I/71qlKqpJnlL._SX3000_.jpg" />
-            </div>
-            <div class="image-item">
-                <img src="https://m.media-amazon.com/images/I/71cQMXCLSvL._SX3000_.jpg" />
-            </div>
-            <div class="image-item">
-                <img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" />
-            </div>
-            <div class="image-item">
-                <img src="https://m.media-amazon.com/images/I/61O72XhcEkL._SX3000_.jpg" />
-            </div>
-            <div class="image-item">
-                <img src="https://m.media-amazon.com/images/I/61VuJdpjvaL._SX3000_.jpg" />
-            </div>
-            <div class="image-item">
-                <img src="https://m.media-amazon.com/images/I/61UrRx+3LLL._SX3000_.jpg" />
-            </div>
-        </div>
-
-        <div class="image-btn-container">
-
-            <button class="slider-btn" id="slide-btn-left"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="slider-btn" id="slide-btn-right"><i class="fa-solid fa-chevron-right"></i></i></button>
         </div>
     </div>
+    <!-- slider wrapper for resoponsive only  ------------------------------------->
+    <div class="res" style="background: #fff;">
+        <div style="display: flex; justify-content: center;">
+            <div class="swiper-container">
+                <div class="slider-wrapper">
+                  <button id="prev-slide" class="slide-button material-symbols-rounded">
+                    chevron_left
+                  </button>
+                  <ul class="image-list2">
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc1.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                               Amazon.com eGift Card
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(876,053)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc2.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com Print at Home Gift Card
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(876,053)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc3.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com eGift Card
+                                 </a>
+                                 <p class="card-body">Amazon</p>
+                                 <p class="card-body"><sup class="sub-text">$</sup>100<sup class="sub-text">00</sup></p>
+                                 <div class="icon">
+                                     <div class="icon-item">
+                                         <i class="fa-solid fa-star star"></i>
+                                         <i class="fa-solid fa-star star"></i>
+                                         <i class="fa-solid fa-star star"></i>
+                                         <i class="fa-solid fa-star star"></i>
+                                         <i class="fa-solid fa-star star"></i>
+                                     </div>
+                                     <div class="rate-number">
+                                         <p class="card-body">(876,053)</p>
+                                     </div>
+                                 </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc4.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                 DoorDash eGift Card
+                              </a>
+                              <p class="card-body"> DoorDash </p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(20,459)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc5.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com Gift Card in a limited
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(802)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc6.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Apple Gift Card - App Store, iTunes
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>25<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(60,126)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc7.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com Gift Card in a Birthday 
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(52,101)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc8.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com eGift 
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(876,054)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc9.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com eGift
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(876,054)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc10.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Roblox Physical Gift Card
+                              </a>
+                              <p class="card-body">Roblox</p>
+                              <p class="card-body"><sup class="sub-text"></sup><sup class="sub-text"></sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(1,067)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc11.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com Gift Card in a Birthday
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>25<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(65,153)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc12.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com Gift Card in a Premium 
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(24,858)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc13.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Gap Options eGift Cards
+                              </a>
+                              <p class="card-body"> Gap</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>25<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(2,142)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc14.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com eGift Card
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(876,054)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc15.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com eGift Card
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(876,053)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc16.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com Gift Card in a Birthday
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>25<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(65,153)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc17.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Google Play gift code - give the gift 
+                              </a>
+                              <p class="card-body">Google</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>25<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(45,467)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc18.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com eGift Card
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(52,101)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-item">
+                          <div class="card-image-container">
+                              <a href=""><img src="../img/gift_card/sc19.jpg" alt="" class="card-image"></a>
+                          </div>
+                          <div class="card-content">
+                              <a href="" class="card-title">
+                                  Amazon.com eGift Card
+                              </a>
+                              <p class="card-body">Amazon</p>
+                              <p class="card-body"><sup class="sub-text">$</sup>50<sup class="sub-text">00</sup></p>
+                              <div class="icon">
+                                  <div class="icon-item">
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                      <i class="fa-solid fa-star star"></i>
+                                  </div>
+                                  <div class="rate-number">
+                                      <p class="card-body">(876,053)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </ul>
+                  <button id="next-slide" class="slide-button material-symbols-rounded">
+                    chevron_right
+                  </button>
+              </div>
+                <div class="slider-scrollbar">
+                  <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end slider wrapper for resoponsive only  -------------------------------->
     <!----------------third navbar ------------>
     <div class="sub-nav-bar_3">
         <ul>
@@ -353,19 +820,19 @@
     <div class="gift-card-container">
         <div class="card-container">
             <div class="card">
-                <a href=""><img src="../img/gift_card/mc1.jpg" alt=""></a>
+                <a href=""><img src="../img/gift_card/mcupdate1.png" alt=""></a>
                 <a href="" class="card-content"></a>
             </div>
             <div class="card">
-                <a href=""><img src="../img/gift_card/mc2.jpg" alt=""></a>
+                <a href=""><img src="../img/gift_card/mc2update.png" alt=""></a>
                 <a href="" class="card-content"></a>
             </div>
             <div class="card">
-                <a href=""><img src="../img/gift_card/mc3.jpg" alt=""></a>
+                <a href=""><img src="../img/gift_card/mc3update.png" alt=""></a>
                 <a href="" class="card-content"></a>
             </div>
             <div class="card">
-                <a href=""><img src="../img/gift_card/mc4.jpg" alt=""></a>
+                <a href=""><img src="../img/gift_card/mc4update.png" alt=""></a>
                 <a href="" class="card-content"></a>
             </div>
             <div style="margin-top: 60px; border-bottom: solid 1px gray; width: 97%; padding: 10px; margin-left:20px ;">
@@ -379,7 +846,7 @@
                   <button id="prev-slide" class="slide-button material-symbols-rounded">
                     chevron_left
                   </button>
-                  <ul class="image-list">
+                  <ul class="image-list2">
                       <div class="card-item">
                           <div class="card-image-container">
                               <a href=""><img src="../img/gift_card/sc1.jpg" alt="" class="card-image"></a>
@@ -851,22 +1318,22 @@
         <!-- .....................Second Card Container------------ -->
         <div class="card-container">
             <div class="card-2">
-                <a href=""><img src="../img/gift_card/3c_1.jpg" alt=""></a>
+                <a href=""><img src="../img/gift_card/3c_1update.png" alt=""></a>
                 <a href="" class="card-content"></a>
             </div>
             <div class="card-2">
-                <a href=""><img src="../img/gift_card/3c_2.jpg" alt=""></a>
+                <a href=""><img src="../img/gift_card/3c_2update.png" alt=""></a>
                 <a href="" class="card-content"></a>
             </div>
             <div class="card-2">
-                <a href=""><img src="../img/gift_card/3c_3.jpg" alt=""></a>
+                <a href=""><img src="../img/gift_card/3c_3update.png" alt=""></a>
                 <a href="" class="card-content"></a>
             </div> 
         </div>
        <div class="container-seperate-bar">
-        <a href=""><h3>Learn more about gift card scams and fraud prevention</h3></a>
+        <a href=""><p>Learn more about gift card scams and fraud prevention</p></a>
        </div>
-       <div class="question-container">
+       <div class="question-container" style="word-break: break-all; overflow: hidden;">
             <h2>Freqeuntly Asked Question</h2>
           <div class="question-item">
             <h3>What can Amazon Gift Cards be redeemed towards</h3>
@@ -888,7 +1355,7 @@
        </div>
     </div>
     <!-- footer...................................................... -->
-    <div class="footer">
+    <div class="footer" style="word-break: break-all; overflow: hidden;">
         <div class="top-footer">
             Back to up
         </div>
@@ -937,24 +1404,24 @@
             </div>
             
         </div>
-        <div class="bottom-footer">
+        <div class="bottom-footer" style="word-break: break-all; overflow: hidden;">
             <div class="cover">
                 <div class="logo">
                     <img src="../img/nav-bar/logo-footer.png" alt="">
                 </div>
                 <div class="all-inputs">
-                    <div class="input1">
+                    <div class="input1 input-top">
                         <i class="fa fa-globe"></i>
                         <select name="" id="">
                             <option value="">English</option>
                             <option value="">English</option>
                         </select>
                     </div>
-                    <div class="input1">
+                    <div class="input1 input-center">
                         <i class="fa fa-dollar"></i>
                         <input type="text" placeholder="USD - U.S. Dollar">
                     </div>
-                    <div class="input1">
+                    <div class="input1 input-last">
                         <img src="../img/nav-bar/cambodia.png" alt="">
                         <input class="cam" type="text" placeholder="Cambodia">
                     </div>
@@ -964,7 +1431,7 @@
             </div>
 
         </div>
-        <div class="last-footer">
+        <div class="last-footer" style="word-break: break-all; overflow: hidden;">
             <div class="cover">
                 <div class="row">
                     <div class="col">
@@ -1366,13 +1833,14 @@
         	
 
     </div>
+        	
     <script src="../js/home.js"></script>
 </body>
 </html>
 
 <script>
     const initSlider = () => {
-    const imageList = document.querySelector(".slider-wrapper .image-list");
+    const imageList = document.querySelector(".slider-wrapper .image-list2");
     const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
     const sliderScrollbar = document.querySelector(".swiper-container .slider-scrollbar");
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
