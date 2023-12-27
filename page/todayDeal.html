@@ -30,6 +30,19 @@
     />
 
     <link rel="stylesheet" href="../css/todayDeal.css" />
+
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Navbar -->
@@ -140,219 +153,265 @@
           <h3>Trending deals in Clothing & Accessories</h3>
         </div>
 
-        <div class="cards_container">
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div
-                class="carousel-item active"
-                style="display: flex; align-content: center; padding: 12px"
-              >
-                <div style="border: none; margin: 12px" class="card">
-                  <div class="card_image">
-                    <img
-                      width="100%"
-                      height="100%"
-                      class="_image"
-                      src="../img/deal/bottle.jpg"
-                      alt=""
-                    />
+        <section class="today_deals_container">
+          <div class="today_deals_product_container">
+            <div class="today_deals_btn_container">
+              <button class="today_deal_btn" id="today_deal_btn_prev">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <button class="today_deal_btn" id="today_deal_btn_next">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+
+            <div class="today_deals_product_list">
+              <div style="border: none; margin: 12px; height: 40%" class="card">
+                <div class="card_image">
+                  <img
+                    width="100%"
+                    height="100%"
+                    class="_image"
+                    src="../img/deal/bottle.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <div class="card_btn">
+                    <button class="bg_btn">20% off</button>
+                    <button class="no_bg_btn">Deal</button>
                   </div>
-                  <div class="card_content">
-                    <div class="card_btn">
-                      <button class="bg_btn">20% off</button>
-                      <button class="no_bg_btn">Deal</button>
-                    </div>
-                    <div class="card_price">
+                  <div class="card_price">
+                    <div>
                       <sub>$</sub>
                       <h3>19</h3>
                       <sup>92</sup>
-                      <p class="m_left">List: <del>$24.90</del></p>
                     </div>
-                    <div class="card_footer">
-                      <p>
-                        Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
-                      </p>
-                    </div>
+                    <p class="m_left">List: <del>$24.90</del></p>
+                  </div>
+                  <div class="card_footer">
+                    <p>
+                      Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div style="border: none; margin: 12px" class="card">
-                  <div class="card_image">
-                    <img
-                      width="100%"
-                      height="100%"
-                      class="_image"
-                      src="../img/deal/bottle.jpg"
-                      alt=""
-                    />
+              <div style="border: none; margin: 12px; height: 30%" class="card">
+                <div class="card_image">
+                  <img
+                    width="100%"
+                    height="100%"
+                    class="_image"
+                    src="../img/deal/bottle.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <div class="card_btn">
+                    <button class="bg_btn">20% off</button>
+                    <button class="no_bg_btn">Deal</button>
                   </div>
-                  <div class="card_content">
-                    <div class="card_btn">
-                      <button class="bg_btn">20% off</button>
-                      <button class="no_bg_btn">Deal</button>
-                    </div>
-                    <div class="card_price">
+                  <div class="card_price">
+                    <div>
                       <sub>$</sub>
                       <h3>19</h3>
                       <sup>92</sup>
-                      <p class="m_left">List: <del>$24.90</del></p>
                     </div>
-                    <div class="card_footer">
-                      <p>
-                        Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
-                      </p>
-                    </div>
+                    <p class="m_left">List: <del>$24.90</del></p>
+                  </div>
+                  <div class="card_footer">
+                    <p>
+                      Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div style="border: none; margin: 12px" class="card">
-                  <div class="card_image">
-                    <img
-                      width="100%"
-                      height="100%"
-                      class="_image"
-                      src="../img/deal/bottle.jpg"
-                      alt=""
-                    />
+              <div style="border: none; margin: 12px; height: 30%" class="card">
+                <div class="card_image">
+                  <img
+                    width="100%"
+                    height="100%"
+                    class="_image"
+                    src="../img/deal/bottle.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <div class="card_btn">
+                    <button class="bg_btn">20% off</button>
+                    <button class="no_bg_btn">Deal</button>
                   </div>
-                  <div class="card_content">
-                    <div class="card_btn">
-                      <button class="bg_btn">20% off</button>
-                      <button class="no_bg_btn">Deal</button>
-                    </div>
-                    <div class="card_price">
+                  <div class="card_price">
+                    <div>
                       <sub>$</sub>
                       <h3>19</h3>
                       <sup>92</sup>
-                      <p class="m_left">List: <del>$24.90</del></p>
                     </div>
-                    <div class="card_footer">
-                      <p>
-                        Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
-                      </p>
-                    </div>
+                    <p class="m_left">List: <del>$24.90</del></p>
+                  </div>
+                  <div class="card_footer">
+                    <p>
+                      Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div style="border: none; margin: 12px" class="card">
-                  <div class="card_image">
-                    <img
-                      width="100%"
-                      height="100%"
-                      class="_image"
-                      src="../img/deal/bottle.jpg"
-                      alt=""
-                    />
+              <div style="border: none; margin: 12px; height: 30%" class="card">
+                <div class="card_image">
+                  <img
+                    width="100%"
+                    height="100%"
+                    class="_image"
+                    src="../img/deal/bottle.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <div class="card_btn">
+                    <button class="bg_btn">20% off</button>
+                    <button class="no_bg_btn">Deal</button>
                   </div>
-                  <div class="card_content">
-                    <div class="card_btn">
-                      <button class="bg_btn">20% off</button>
-                      <button class="no_bg_btn">Deal</button>
-                    </div>
-                    <div class="card_price">
+                  <div class="card_price">
+                    <div>
                       <sub>$</sub>
                       <h3>19</h3>
                       <sup>92</sup>
-                      <p class="m_left">List: <del>$24.90</del></p>
                     </div>
-                    <div class="card_footer">
-                      <p>
-                        Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
-                      </p>
-                    </div>
+                    <p class="m_left">List: <del>$24.90</del></p>
+                  </div>
+                  <div class="card_footer">
+                    <p>
+                      Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div style="border: none" class="card">
-                  <div class="card_image">
-                    <img
-                      width="100%"
-                      height="100%"
-                      class="_image"
-                      src="../img/deal/bottle.jpg"
-                      alt=""
-                    />
+              <div style="border: none; margin: 12px; height: 30%" class="card">
+                <div class="card_image">
+                  <img
+                    width="100%"
+                    height="100%"
+                    class="_image"
+                    src="../img/deal/bottle.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <div class="card_btn">
+                    <button class="bg_btn">20% off</button>
+                    <button class="no_bg_btn">Deal</button>
                   </div>
-                  <div class="card_content">
-                    <div class="card_btn">
-                      <button class="bg_btn">20% off</button>
-                      <button class="no_bg_btn">Deal</button>
-                    </div>
-                    <div class="card_price">
+                  <div class="card_price">
+                    <div>
                       <sub>$</sub>
                       <h3>19</h3>
                       <sup>92</sup>
-                      <p class="m_left">List: <del>$24.90</del></p>
                     </div>
-                    <div class="card_footer">
-                      <p>
-                        Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
-                      </p>
-                    </div>
+                    <p class="m_left">List: <del>$24.90</del></p>
+                  </div>
+                  <div class="card_footer">
+                    <p>
+                      Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
+                    </p>
                   </div>
                 </div>
-
-                <div style="border: none" class="card">
-                  <div class="card_image">
-                    <img
-                      width="100%"
-                      height="100%"
-                      class="_image"
-                      src="../img/deal/bottle.jpg"
-                      alt=""
-                    />
+              </div>
+              <div style="border: none; margin: 12px; height: 30%" class="card">
+                <div class="card_image">
+                  <img
+                    width="100%"
+                    height="100%"
+                    class="_image"
+                    src="../img/deal/bottle.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <div class="card_btn">
+                    <button class="bg_btn">20% off</button>
+                    <button class="no_bg_btn">Deal</button>
                   </div>
-                  <div class="card_content">
-                    <div class="card_btn">
-                      <button class="bg_btn">20% off</button>
-                      <button class="no_bg_btn">Deal</button>
-                    </div>
-                    <div class="card_price">
+                  <div class="card_price">
+                    <div>
                       <sub>$</sub>
                       <h3>19</h3>
                       <sup>92</sup>
-                      <p class="m_left">List: <del>$24.90</del></p>
                     </div>
-                    <div class="card_footer">
-                      <p>
-                        Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
-                      </p>
+                    <p class="m_left">List: <del>$24.90</del></p>
+                  </div>
+                  <div class="card_footer">
+                    <p>
+                      Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div style="border: none; margin: 12px; height: 30%" class="card">
+                <div class="card_image">
+                  <img
+                    width="100%"
+                    height="100%"
+                    class="_image"
+                    src="../img/deal/bottle.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <div class="card_btn">
+                    <button class="bg_btn">20% off</button>
+                    <button class="no_bg_btn">Deal</button>
+                  </div>
+                  <div class="card_price">
+                    <div>
+                      <sub>$</sub>
+                      <h3>19</h3>
+                      <sup>92</sup>
                     </div>
+                    <p class="m_left">List: <del>$24.90</del></p>
+                  </div>
+                  <div class="card_footer">
+                    <p>
+                      Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div style="border: none; margin: 12px; height: 30%" class="card">
+                <div class="card_image">
+                  <img
+                    width="100%"
+                    height="100%"
+                    class="_image"
+                    src="../img/deal/bottle.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <div class="card_btn">
+                    <button class="bg_btn">20% off</button>
+                    <button class="no_bg_btn">Deal</button>
+                  </div>
+                  <div class="card_price">
+                    <div>
+                      <sub>$</sub>
+                      <h3>19</h3>
+                      <sup>92</sup>
+                    </div>
+                    <p class="m_left">List: <del>$24.90</del></p>
+                  </div>
+                  <div class="card_footer">
+                    <p>
+                      Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Carousel btn -->
-            <button
-              class="carousel-control-prev carousel_btn"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next carousel_btn"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-        </div>
+        </section>
       </div>
     </div>
 
@@ -386,9 +445,11 @@
             <button class="no_bg_btn">Deal</button>
           </div>
           <div class="card_price">
-            <sub>$</sub>
-            <h3>19</h3>
-            <sup>92</sup>
+            <div>
+              <sub>$</sub>
+              <h3>19</h3>
+              <sup>92</sup>
+            </div>
             <p class="m_left">List: <del>$24.90</del></p>
           </div>
           <div class="card_footer">
@@ -413,9 +474,11 @@
             <button class="no_bg_btn">Deal</button>
           </div>
           <div class="card_price">
-            <sub>$</sub>
-            <h3>19</h3>
-            <sup>92</sup>
+            <div>
+              <sub>$</sub>
+              <h3>19</h3>
+              <sup>92</sup>
+            </div>
             <p class="m_left">List: <del>$24.90</del></p>
           </div>
           <div class="card_footer">
@@ -440,9 +503,11 @@
             <button class="no_bg_btn">Deal</button>
           </div>
           <div class="card_price">
-            <sub>$</sub>
-            <h3>19</h3>
-            <sup>92</sup>
+            <div>
+              <sub>$</sub>
+              <h3>19</h3>
+              <sup>92</sup>
+            </div>
             <p class="m_left">List: <del>$24.90</del></p>
           </div>
           <div class="card_footer">
@@ -467,9 +532,11 @@
             <button class="no_bg_btn">Deal</button>
           </div>
           <div class="card_price">
-            <sub>$</sub>
-            <h3>19</h3>
-            <sup>92</sup>
+            <div>
+              <sub>$</sub>
+              <h3>19</h3>
+              <sup>92</sup>
+            </div>
             <p class="m_left">List: <del>$24.90</del></p>
           </div>
           <div class="card_footer">
@@ -494,9 +561,11 @@
             <button class="no_bg_btn">Deal</button>
           </div>
           <div class="card_price">
-            <sub>$</sub>
-            <h3>19</h3>
-            <sup>92</sup>
+            <div>
+              <sub>$</sub>
+              <h3>19</h3>
+              <sup>92</sup>
+            </div>
             <p class="m_left">List: <del>$24.90</del></p>
           </div>
           <div class="card_footer">
@@ -507,50 +576,445 @@
     </div>
 
     <!-- Auto Rounded  -->
-
+<!-- 
     <div style="background-color: rgb(172, 165, 165)" class="cards-container">
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div
-            class="carousel-item active"
-            style="display: flex; align-content: center; padding: 12px"
-          >
-            <div style="border: none; margin: 12px" class="card">
-              <div class="rounded-image">
-                <img
-                  width="100%"
-                  height="100%"
-                  src="../img/deal/bottle.jpg"
-                  alt=""
-                />
-              </div>
+      <section class="today_deals_container">
+        <div class="today_deals_product_container">
+          <div class="today_deals_btn_container">
+            <button class="today_deal_btn" id="today_deal_btn_prev">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="today_deal_btn" id="today_deal_btn_next">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+
+          <div class="today_deals_product_list">
+            <div class="rounded-margin">
+              <img
+                class="rounded-image"
+                width="100%"
+                height="100%"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+              <div class="card_content">Holiday</div>
+            </div>
+
+            <div class="rounded-margin">
+              <img
+                class="rounded-image"
+                width="100%"
+                height="100%"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
               <div class="card_content">Holiday</div>
             </div>
           </div>
         </div>
-        <!-- Carousel btn -->
-        <button
-          class="carousel-control-prev carousel_btn"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next carousel_btn"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </section>
+    </div> -->
+
+    <div style="display: flex; justify-content: flex-end; padding: 12px">
+      <select name="" id="">
+        <option value="">Sort by Featured</option>
+        <option value="">Sort by</option>
+        <option value="">Sort by Featured</option>
+      </select>
+    </div>
+
+    <div style="display: flex; margin: 0 20px">
+      <div>
+        <div>
+          <li>All deals</li>
+          <li>Available</li>
+          <li>Upcoming</li>
+          <li>Watchlist</li>
+        </div>
+
+        <div>
+          <h3>Prime Programs</h3>
+          <form>
+            <input type="checkbox" />
+            <label>prime</label><br />
+            <input type="checkbox" />
+            <label>Prime Early Access deal</label><br />
+            <input type="checkbox" />
+            <label>Prime Exclusive deals</label>
+          </form>
+
+          <h3>Departments</h3>
+          <li>Select All</li>
+          <form>
+            <input type="checkbox" />
+            <label>Amazon Deices & Accessories</label><br />
+            <input type="checkbox" />
+            <label>Appliances</label><br />
+            <input type="checkbox" />
+            <label>Arts, Crafts & Sewing</label><br />
+            <input type="checkbox" />
+            <label>Audible Books & Originals</label><br />
+            <input type="checkbox" />
+            <label>Automotive</label><br />
+            <input type="checkbox" />
+            <label>Baby Clothing & Shoes</label><br />
+            <input type="checkbox" />
+            <label>Baby Products</label><br />
+            <input type="checkbox" />
+            <label>Beauty & Personal Care</label><br />
+            <input type="checkbox" />
+            <label>Books</label><br />
+            <input type="checkbox" />
+            <label>Boys' Fashion</label><br />
+            <input type="checkbox" />
+            <label>Camera & Photo</label><br />
+            <input type="checkbox" />
+            <label>CDs & Vinyl</label><br />
+            <input type="checkbox" />
+            <label>Cell Phones & Accessories</label><br />
+            <input type="checkbox" />
+            <label>Clothing, Shoes & Jewelry</label><br />
+            <input type="checkbox" />
+            <label>Computers & Accessories</label><br />
+            <input type="checkbox" />
+            <label>Costumes & Accessories</label><br />
+            <input type="checkbox" />
+            <label>Electronics</label><br />
+            <input type="checkbox" />
+            <label>Furniture</label><br />
+            <input type="checkbox" />
+            <label>Git Cards</label>
+          </form>
+        </div>
+      </div>
+      <div>
+        <div style="display: flex; height: 50%">
+          <div class="card card-border">
+            <div>
+              <img
+                width="100%"
+                height="100%"
+                class="_image"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card_no_slide">
+              <div class="card_btn">
+                <button class="bg_btn">Up to 35% off</button>
+                <button class="no_bg_btn">Deal</button>
+              </div>
+              <div class="card_footer">
+                <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-border">
+            <div>
+              <img
+                width="100%"
+                height="100%"
+                class="_image"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card_no_slide">
+              <div class="card_btn">
+                <button class="bg_btn">Up to 35% off</button>
+                <button class="no_bg_btn">Deal</button>
+              </div>
+              <div class="card_footer">
+                <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-border">
+            <div>
+              <img
+                width="100%"
+                height="100%"
+                class="_image"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card_no_slide">
+              <div class="card_btn">
+                <button class="bg_btn">Up to 35% off</button>
+                <button class="no_bg_btn">Deal</button>
+              </div>
+              <div class="card_footer">
+                <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-border">
+            <div>
+              <img
+                width="100%"
+                height="100%"
+                class="_image"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card_no_slide">
+              <div class="card_btn">
+                <button class="bg_btn">Up to 35% off</button>
+                <button class="no_bg_btn">Deal</button>
+              </div>
+              <div class="card_footer">
+                <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-border">
+            <div>
+              <img
+                width="100%"
+                height="100%"
+                class="_image"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card_no_slide">
+              <div class="card_btn">
+                <button class="bg_btn">Up to 35% off</button>
+                <button class="no_bg_btn">Deal</button>
+              </div>
+              <div class="card_footer">
+                <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; height: 50%">
+          <div class="card card-border">
+            <div>
+              <img
+                width="100%"
+                height="100%"
+                class="_image"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card_no_slide">
+              <div class="card_btn">
+                <button class="bg_btn">Up to 35% off</button>
+                <button class="no_bg_btn">Deal</button>
+              </div>
+              <div class="card_footer">
+                <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-border">
+            <div>
+              <img
+                width="100%"
+                height="100%"
+                class="_image"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card_no_slide">
+              <div class="card_btn">
+                <button class="bg_btn">Up to 35% off</button>
+                <button class="no_bg_btn">Deal</button>
+              </div>
+              <div class="card_footer">
+                <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-border">
+            <div>
+              <img
+                width="100%"
+                height="100%"
+                class="_image"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card_no_slide">
+              <div class="card_btn">
+                <button class="bg_btn">Up to 35% off</button>
+                <button class="no_bg_btn">Deal</button>
+              </div>
+              <div class="card_footer">
+                <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-border">
+            <div>
+              <img
+                width="100%"
+                height="100%"
+                class="_image"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card_no_slide">
+              <div class="card_btn">
+                <button class="bg_btn">Up to 35% off</button>
+                <button class="no_bg_btn">Deal</button>
+              </div>
+              <div class="card_footer">
+                <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-border">
+            <div>
+              <img
+                width="100%"
+                height="100%"
+                class="_image"
+                src="../img/deal/bottle.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card_no_slide">
+              <div class="card_btn">
+                <button class="bg_btn">Up to 35% off</button>
+                <button class="no_bg_btn">Deal</button>
+              </div>
+              <div class="card_footer">
+                <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <img width="100%" src="../img/deal/pagination.png" alt="" />
+    </div>
+
+    <div><h3>Seasonal deals</h3></div>
+
+    <div style="display: flex">
+      <div class="card card-border">
+        <div>
+          <img
+            width="100%"
+            height="100%"
+            class="_image"
+            src="../img/deal/bottle.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card_no_slide">
+          <div class="card_btn">
+            <button class="bg_btn">Up to 35% off</button>
+            <button class="no_bg_btn">Deal</button>
+          </div>
+          <div class="card_footer">
+            <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-border">
+        <div>
+          <img
+            width="100%"
+            height="100%"
+            class="_image"
+            src="../img/deal/bottle.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card_no_slide">
+          <div class="card_btn">
+            <button class="bg_btn">Up to 35% off</button>
+            <button class="no_bg_btn">Deal</button>
+          </div>
+          <div class="card_footer">
+            <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-border">
+        <div>
+          <img
+            width="100%"
+            height="100%"
+            class="_image"
+            src="../img/deal/bottle.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card_no_slide">
+          <div class="card_btn">
+            <button class="bg_btn">Up to 35% off</button>
+            <button class="no_bg_btn">Deal</button>
+          </div>
+          <div class="card_footer">
+            <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-border">
+        <div>
+          <img
+            width="100%"
+            height="100%"
+            class="_image"
+            src="../img/deal/bottle.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card_no_slide">
+          <div class="card_btn">
+            <button class="bg_btn">Up to 35% off</button>
+            <button class="no_bg_btn">Deal</button>
+          </div>
+          <div class="card_footer">
+            <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-border">
+        <div>
+          <img
+            width="100%"
+            height="100%"
+            class="_image"
+            src="../img/deal/bottle.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card_no_slide">
+          <div class="card_btn">
+            <button class="bg_btn">Up to 35% off</button>
+            <button class="no_bg_btn">Deal</button>
+          </div>
+          <div class="card_footer">
+            <p>Amazon essentials Men's Tag-Free Boxer Briefs, Pack of 5</p>
+          </div>
+        </div>
       </div>
     </div>
 
