@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="../../css/digital&support.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon" href="../../img/nav-bar/logo2.jpg" />
+    <title>Digital Page</title>
+    <link rel="stylesheet" href="../css/digital&support.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../img/nav-bar/logo2.jpg" />
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" />
 </head>
 
 <body>
@@ -15,13 +18,15 @@
     <div class="nav-bar">
         <div class="nav-bar-left">
             <div class="logo">
-                <img src="../../img/nav-bar/logo.png" alt="" />
+                <a href="../index.html">
+                    <img src="../img/nav-bar/logo.png" alt="">
+                </a>
             </div>
             <div class="location">
                 <div class="location-title-top">Delivering to Newyork 10001</div>
                 <div class="location-title-botton">
                     <div class="icon">
-                        <img src="../../img/nav-bar/map-icon.jpg" alt="" />
+                        <img src="../img/nav-bar/map-icon.jpg" alt="" />
                     </div>
                     <div class="title">Update location</div>
                 </div>
@@ -46,7 +51,7 @@
         </div>
         <div class="nav-bar-right">
             <div class="select-country">
-                <img src="../../img/nav-bar/cambodia.png" alt="" />
+                <img src="../img/nav-bar/cambodia.png" alt="" />
                 <div class="country">Cambodia</div>
                 <select name="" id="">
                     <option value=""></option>
@@ -74,7 +79,7 @@
     <!--============== sub-navbar ====================-->
     <div class="sub-nav-bar">
         <div class="left">
-            <div class="hamberger-menu">
+            <div class="hamberger-menu" id="open-nav-sidebar">
                 <div class="icon">
                     <i class="fa fa-bars"></i>
                 </div>
@@ -88,6 +93,59 @@
         </div>
         <div class="right">Get a jump on Holiday gifts</div>
     </div>
+    <!--============== end sub-navbar ====================-->
+     <!--sidebar navigation-->
+     <div class="sidebar-container-navigation" id="sidebar-container-navigation-id">
+        <div class="sidebar-left-part">
+            <div class="sidebar-top">
+                <i class="fa-solid fa-circle-user"></i>
+                <h2>Hello, <span>sign in</span></h2>
+            </div>
+            <div class="sidebar-wrap">
+                <div class="sidebar-item">
+                    <h2><a href="">Today's Deals</a></h2>
+                    <p>Best Sellers</p>
+                    <p>New Releases</p>
+                    <p>Movers and Shakers</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2><a href="registry.html">Registry</a></h2>
+                    <p>Echo & Alexa</p>
+                    <p>Fire TV</p>
+                    <p>Kindle E-Readers & eBooks</p>
+                    <p>Audible Audiobooks</p>
+                    <p>Amazon Prime Video</p>
+                    <p>Amazon Prime Music</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2><a href="customerService.html">Customer Service</a></h2>
+                    <p>Mobiles, Computes</p>
+                    <p>TV, Appliances, Electronic</p>
+                    <p>Men's Fashion</p>
+                    <p>Women's Fashion</p>
+                    <p>See All</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2><a href="gift_card.html">Gift Cards</a></h2>
+                    <p>Gift Cards & Mobile Recharges</p>
+                    <p>Flight Tickets</p>
+                    <p>#Foundlt-OnAmazon</p>
+                    <p>Clearance store</p>
+                </div>
+                <div class="sidebar-item">
+                  <h2><a href="sell_page.html">Sell</a></h2>
+                  <p>Your Account</p>
+                  <p>Customer Service</p>
+                    <!-- <p><a href="./page/login.html" id="sign_out" style="text-decoration: none;color: red;">Sign out</a></p> -->
+                    <p><a href="page/login.html" id="sign_in" style="text-decoration: none;color: red;">Sign in</a></p>
+                </div>
+            </div>
+        </div>
+        <button id="sidebar-navigation-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    
     <!--============== end sub-navbar ====================-->
 
 
@@ -114,11 +172,11 @@
                 <div>
 
                     <h2 class="text-center"> Things you can do</h2>
-                    <p class="py-10"> <img src="../../img//customerservice/digital/digital1.png" alt=""> <span>Manage
+                    <p class="py-10"> <img src="../img//customerservice/digital/digital1.png" alt=""> <span>Manage
                             Content & Devinces</span> </p>
-                    <p><img src="../../img/customerservice/digital/digital2.png" alt=""> <span>Prime Video
+                    <p><img src="../img/customerservice/digital/digital2.png" alt=""> <span>Prime Video
                             Settings</span> </p>
-                    <p class="py-10"><img src="../../img//customerservice/digital/digital4.png" alt=""> <span>Ask the
+                    <p class="py-10"><img src="../img//customerservice/digital/digital4.png" alt=""> <span>Ask the
                             Community</span></p>
                 </div>
 
@@ -131,32 +189,32 @@
                         <div>
                             <p class="py-10 " style="display: flex;">
 
-                                <img style="margin-right: 5px; " src="../../img//customerservice/digital/digital3.png"
+                                <img style="margin-right: 5px; " src="../img//customerservice/digital/digital3.png"
                                     alt="">
                                 <span style="margin-left: 5px;margin-top: 10px;">Resolve Liquid Detection Issues on Your
                                     Fire Tablet</span>
                             </p>
-                            <p><img style="margin-right: 5px; " src="../../img/customerservice/digital/digital3.png"
+                            <p><img style="margin-right: 5px; " src="../img/customerservice/digital/digital3.png"
                                     alt="">
                                 <span style="margin-left: 5px;position: relative; bottom: 10px;">Return a Kindle
                                     Book Order</span>
                             </p>
                             <p class="py-10">
-                                <img style="margin-right: 5px; " src="../../img//customerservice/digital/digital3.png"
+                                <img style="margin-right: 5px; " src="../img//customerservice/digital/digital3.png"
                                     alt="">
                                 <span style="margin-left: 5px;position: relative; bottom: 10px;"> Update Your Kindle
                                     Unlimited Membership Payment Information</span>
                             </p>
                         </div>
                         <div class="px-5" style="margin-left: 5px;">
-                            <p class="py-10"><img src="../../img//customerservice/digital/digital6.png" alt="">
+                            <p class="py-10"><img src="../img//customerservice/digital/digital6.png" alt="">
                                 <span style="margin-left: 5px;position: relative; bottom: 15px;">
                                     Cancel Amazon Music Unlimited Subscription</span>
                             </p>
                             <p><img src="../../img/customerservice/digital/digital7.png" alt=""> <span
                                     style="margin-left: 5px;position: relative; bottom: 12px;">Cancel Your Prime
                                     Video Subscription Channel</span></p>
-                            <p class="py-10"><img src="../../img//customerservice/digital/digital8.png" alt=""><span
+                            <p class="py-10"><img src="../img//customerservice/digital/digital8.png" alt=""><span
                                     style="margin-left: 5px;position: relative; bottom: 12px;">
                                     Alexa Preferences and Settings</span> </p>
                         </div>
@@ -181,112 +239,112 @@
         <div id="card-grid">
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px; padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card7.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card7.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card2.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card2.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card8.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card8.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card3.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card3.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card9.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card9.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card4.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card4.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card10.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card10.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card5.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card5.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card11.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card11.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card1.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card1.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card6.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card6.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
             <div class="card"
                 style="display: flex; justify-content: space-evenly; align-items: center; background: #F7F7F7;margin: 10px 10px 10px 10px;padding: 20px 0px 10px 0px;">
-                <div class="card-head"><img width="50" src="../../img/customerservice/digital/card12.png" alt=""></div>
+                <div class="card-head"><img width="50" src="../img/customerservice/digital/card12.png" alt=""></div>
                 <div class="card-body">Prime Video</div>
             </div>
         </div>
@@ -560,6 +618,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/home.js"></script>
 </body>
 
 </html>

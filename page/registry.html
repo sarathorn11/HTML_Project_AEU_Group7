@@ -10,7 +10,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="icon" href="../img/nav-bar/logo2.jpg" />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
   <body>
     <!-- --------------navbar------------- -->
     <div class="nav-bar">
@@ -73,22 +87,86 @@
     </div>
     <!-- --------------end navbar------------- -->
     <!--============== sub-navbar ====================-->
-    <div class="sub-nav-bar">
-      <div class="left">
-        <div class="hamberger-menu">
-          <div class="icon">
-            <i class="fa fa-bars"></i>
-          </div>
-          <div class="text">All</div>
-        </div>
-        <li>Today's Deals</li>
-        <li>Registry</li>
-        <li>Customer Service</li>
-        <li>Gift Cards</li>
-        <li>Sell</li>
+
+    <nav class="nav sub-nav-bar">
+      <div class="container container-nav left">
+        <li class="border-white hamberger-menu" id="open-nav-sidebar">
+          <span class="open-nav-slider icon">
+            <i class="fa-solid fa-bars"></i>
+            <p>All</p>
+          </span>
+        </li>
+        <li class="border-white">
+          <a href="/page/todayDeal.html">Today's Deals</a>
+        </li>
+        <li class="border-white"><a href="/page/registry.html">Registry</a></li>
+        <li class="border-white">
+          <a href="/page/customerService.html">Customer Service</a>
+        </li>
+        <li class="border-white"><a href="gift_card.html">Gift Cards</a></li>
+        <li class="border-white"><a href="/page/sell_page.html">Sell</a></li>
       </div>
       <div class="right">Get a jump on Holiday gifts</div>
+    </nav>
+
+    <!--sidebar navigation-->
+    <div
+      class="sidebar-container-navigation"
+      id="sidebar-container-navigation-id"
+    >
+      <div class="sidebar-left-part">
+        <div class="sidebar-top">
+          <i class="fa-solid fa-circle-user"></i>
+          <h2>Hello, <span>sign in</span></h2>
+        </div>
+        <div class="sidebar-wrap">
+          <div class="sidebar-item">
+            <h2>Trending</h2>
+            <p>Best Sellers</p>
+            <p>New Releases</p>
+            <p>Movers and Shakers</p>
+          </div>
+          <div class="sidebar-item">
+            <h2>Digital Content And Devices</h2>
+            <p>Echo & Alexa</p>
+            <p>Fire TV</p>
+            <p>Kindle E-Readers & eBooks</p>
+            <p>Audible Audiobooks</p>
+            <p>Amazon Prime Video</p>
+            <p>Amazon Prime Music</p>
+          </div>
+          <div class="sidebar-item">
+            <h2>Shop By Category</h2>
+            <p>Mobiles, Computes</p>
+            <p>TV, Appliances, Electronic</p>
+            <p>Men's Fashion</p>
+            <p>Women's Fashion</p>
+            <p>See All</p>
+          </div>
+          <div class="sidebar-item">
+            <h2>Programs & Features</h2>
+            <p>Gift Cards & Mobile Recharges</p>
+            <p>Flight Tickets</p>
+            <p>#Foundlt-OnAmazon</p>
+            <p>Clearance store</p>
+          </div>
+          <div class="sidebar-item">
+            <h2>Help & Settings</h2>
+            <p>Your Account</p>
+            <p>Customer Service</p>
+            <p>
+              <a href="../index.html" style="text-decoration: none; color: red"
+                >Sign out</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <button id="sidebar-navigation-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
     </div>
+
     <!--============== end sub-navbar ====================-->
     <!-- -----------------------submenu registry----------------------------------- -->
 
@@ -116,7 +194,11 @@
       <!-- submenu banner -->
       <section id="registry-banner">
         <div class="">
-          <img class="registry-banner-width" src="../img//registry/banner.jpg" alt="" />
+          <img
+            class="registry-banner-width"
+            src="../img/registry/banner.jpg"
+            alt=""
+          />
         </div>
       </section>
       <!-- end submenu banner -->
@@ -230,9 +312,12 @@
       </section>
       <!-- end create registry gift list -->
       <!-- give exactly what you want to family -->
-      <section id="gift-to-family">
+      <section
+        style="display: flex; justify-content: center"
+        id="gift-to-family"
+      >
         <div>
-          <img width="1350" src="../img/registry//give_gift.jpg" alt="" />
+          <img class="w-give-gift" src="../img/registry/give_gift.jpg" alt="" />
         </div>
       </section>
       <!-- end give exactly what you want to family -->
@@ -355,18 +440,18 @@
             <img src="../img/nav-bar/logo-footer.png" alt="" />
           </div>
           <div class="all-inputs">
-            <div class="input1">
+            <div class="input1 input-top">
               <i class="fa fa-globe"></i>
               <select name="" id="">
                 <option value="">English</option>
                 <option value="">English</option>
               </select>
             </div>
-            <div class="input1">
+            <div class="input1 input-center">
               <i class="fa fa-dollar"></i>
               <input type="text" placeholder="USD - U.S. Dollar" />
             </div>
-            <div class="input1">
+            <div class="input1 input-last">
               <img src="../img/nav-bar/cambodia.png" alt="" />
               <input class="cam" type="text" placeholder="Cambodia" />
             </div>
@@ -546,6 +631,7 @@
         </div>
       </div>
     </div>
+
+    <script src="../js/home.js"></script>
   </body>
 </html>
-t
