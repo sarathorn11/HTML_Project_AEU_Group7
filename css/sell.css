@@ -6,6 +6,9 @@ body{
     background: #ececec;
     font-family: 'Baloo Bhai 2', 'cursive';
 }
+#active{
+  border: 1px solid #fcfcfc;
+}
 
 .nav-bar{
     background: #000;

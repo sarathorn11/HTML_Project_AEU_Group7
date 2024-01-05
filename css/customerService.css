@@ -7,6 +7,9 @@
 body {
     background: #007185;
 }
+#active{
+    border: 1px solid #fcfcfc;
+  }
 
 /* -------------------------nav-bar ------------------------*/
 .nav-bar {
