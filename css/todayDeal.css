@@ -296,7 +296,7 @@ ul {
 }
 
 .medium_title {
-  margin: 10px 45px;
+  margin: 10px 25px;
   font-weight: bold;
 }
 
@@ -379,6 +379,7 @@ ul {
 
 .today_deals_container {
   margin: 0 40px 100px 40px;
+  height: 400px;
 }
 .today_deals_heading {
   display: flex;
@@ -395,8 +396,6 @@ ul {
 }
 
 .today_deals_product_container {
-  /* background-color: red; */
-  height: 300px;
   position: relative;
 }
 .today_deals_product_list {
@@ -453,7 +452,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  /* padding: 20px; */
   z-index: 6;
 }
 .today_deal_btn {
@@ -474,18 +472,193 @@ ul {
   width: 400px;
 }
 
-/* Rounded Card: have icon */
-
-.rounded-image {
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  background-color: #ffffff;
-  border: "1px solid blue";
+.btn-flex {
+  display: flex;
+  align-items: center;
+}
+.card-margin {
+  margin: 4px 8px;
+  padding: 20px;
 }
 
-.rounded-margin {
-  margin: 8px;
+.image-container {
+  position: relative;
+  background: #fff;
+  padding: 10px 20px 10px 20px;
+}
+
+.image-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.image-item {
+  min-width: 100%;
+  height: 300px;
+  /* transform: translateX(-300%); */
+  transition: transform 0.3s;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-btn-container {
+  position: absolute;
+  top: 120px;
+  display: flex;
+  justify-content: space-between;
+  width: 95.1%;
+}
+.swiper-container {
+  margin-top: 10px;
+  width: 96%;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 2.2rem;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-wrapper .slide-button:hover {
+  background: #404040;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+  left: -25px;
+  display: none;
+}
+
+.slider-wrapper .slide-button#next-slide {
+  right: -25px;
+}
+/* disable scrollbar */
+.slider-wrapper .image-list2 {
+  display: grid;
+  grid-template-columns: repeat(19, 1fr);
+  gap: 25px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.slider-wrapper .image-list2::-webkit-scrollbar {
+  display: none;
+}
+.slider-wrapper .image-list2 .card-item {
+  width: 500px;
+  height: 120hv;
+}
+.slider-wrapper .image-list2 .card-item .card-image-container {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 35vh;
+}
+.slider-wrapper .image-list2 .card-item .card-content {
+  margin: 0;
+}
+.slider-wrapper .image-list2 .card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.slider-wrapper .image-list2 .card-content {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background: #ffff;
+  padding: 10px;
+}
+.slider-wrapper .image-list2 .card-item .card-content .sub-text {
+  font-size: 10px;
+}
+.slider-wrapper .image-list2 .card-item .card-content .card-title {
+  font-size: 16px;
+  text-decoration: none;
+  color: #404040;
+}
+.slider-wrapper .image-list2 .card-item .card-content a:hover {
+  color: rgb(157, 40, 8);
+}
+.slider-wrapper .image-list2 .card-item .card-content .card-body {
+  font-size: 500px;
+  padding-top: 10px;
+}
+.slider-wrapper .image-list2 .card-item .card-content .icon {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slider-wrapper .image-list2 .card-item .card-content .icon .star {
+  font-size: 15px;
+  color: orange;
+}
+.container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: none;
+  align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
 }
 
 /* footer  */
