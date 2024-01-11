@@ -670,7 +670,37 @@ body{
     overflow: hidden;
 
 }
+.today_deals_product_list1{
+    display: flex;
+    overflow: hidden;
+
+}
+.today_deals_product_list2{
+    display: flex;
+    overflow: hidden;
+
+}
 .today_deals_product_item{
+    min-width: 250px;
+    height: 250px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0%);
+    transition: transform 1s;
+}
+.today_deals_product_item1{
+    min-width: 250px;
+    height: 250px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0%);
+    transition: transform 1s;
+}
+.today_deals_product_item2{
     min-width: 250px;
     height: 250px;
     padding: 0px 10px;
@@ -695,6 +725,24 @@ body{
     background-color: red;
 }
 .today_deals_product_item p{
+    justify-self: flex-end;
+}
+.today_deals_product_item1 img{
+    width: 100%;
+    height: 100%;
+    /* padding: 20px 20px; */
+    background-color: red;
+}
+.today_deals_product_item1 p{
+    justify-self: flex-end;
+}
+.today_deals_product_item2 img{
+    width: 100%;
+    height: 100%;
+    /* padding: 20px 20px; */
+    background-color: red;
+}
+.today_deals_product_item2 p{
     justify-self: flex-end;
 }
 .discount_Contaienr a{
