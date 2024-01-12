@@ -632,7 +632,7 @@ body{
   button,
   ion-icon { display: block; }
   
-  a {
+  .a {
     color: inherit;
     text-decoration: none;
   }
@@ -1616,7 +1616,7 @@ body{
         width: 100%;
     
     }
-    .all-card .card .link a,.all-card2 .card .link a{
+    .all-card .card .link .a,.all-card2 .card .link .a{
         font-size: 15px;
         text-decoration: none;
         color: teal;
