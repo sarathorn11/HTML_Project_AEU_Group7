@@ -6,6 +6,9 @@
 body{
     background: #ffffff;
 }
+#active{
+    border: 1px solid #fcfcfc;
+  }
 /* -------------------------nav-bar ------------------------*/
 .nav-bar{
     background: #000;

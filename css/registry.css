@@ -296,6 +296,9 @@ body {
 .sub-nav-bar .right:hover{
   border: 1px solid #fcfcfc;
 }
+#active{
+    border: 1px solid #fcfcfc;
+}
 
 
 /*--image slider --*/
