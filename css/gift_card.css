@@ -346,7 +346,6 @@ body {
   transform: translateX(-100%);
   display: flex;
   transition: transform 0.3s;
-  height: 10vh;
   background: #ffff;
 }
 
