@@ -1,12 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Baloo Bhai 2", "cursive";
 }
 /* =================Top Navbar ==============*/
-#active{
-  border: 1px solid #fcfcfc;
-}
 .nav-bar {
   background: #000;
   display: flex;
@@ -271,6 +268,89 @@
   margin-left: 0;
 }
 
+/*sidebar navigation****/
+#open-nav-sidebar {
+  cursor: pointer;
+}
+
+.sidebar-container-navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: transparent;
+  transform: translateX(-100%);
+  display: flex;
+  transition: transform 0.3s;
+  background: #ffff;
+}
+
+.slidebar-show {
+  transform: translateX(0%);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar-left-for-part {
+  background-color: white;
+  width: 365px;
+  height: 100%;
+  box-sizing: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar-the-top {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  padding-left: 30px;
+  background-color: rgb(19, 25, 33);
+  color: white;
+}
+
+.sidebar-the-top h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.sidebar-the-top i {
+  padding-right: 10px;
+  font-size: 40px;
+}
+
+.sidebar-items {
+  padding-left: 30px;
+  border-top: 1.5px solid #ccc;
+}
+
+.sidebar-items h2 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.sidebar-items p {
+  margin: 6px 0;
+  color: rgb(65, 62, 62);
+}
+
+#sidebar-navigate-close {
+  background-color: transparent;
+  align-self: flex-start;
+  font-size: 20px;
+  border: none;
+  color: rgb(235, 12, 12);
+  padding: 20px;
+  margin-left: -2.6rem;
+  margin-top: -1rem;
+  cursor: pointer;
+}
+
+.sidebar-wrapper {
+  height: 80vh;
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
 /* Today deal navbar */
 .nav_container {
   background-color: whitesmoke;
@@ -319,8 +399,8 @@ ul {
 }
 
 .card_image {
-  width: auto;
-  height: 200px;
+  max-width: 100%;
+  max-height: auto;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -330,6 +410,7 @@ ul {
 
 .card_content {
   margin-top: 20px;
+  padding: 0 10px;
   width: 100%;
 }
 
@@ -375,14 +456,9 @@ ul {
   line-height: 16px;
 }
 
-.card_footer {
-  margin-top: 5px;
-  font-weight: bold;
-}
-
 .today_deals_container {
   margin: 0 40px 100px 40px;
-  height: 400px;
+  height: 440px;
 }
 .today_deals_heading {
   display: flex;
